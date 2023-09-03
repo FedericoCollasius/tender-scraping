@@ -1,0 +1,39 @@
+Keywords = []
+Hoy = Hoy()
+DosSemanasAtras = HaceDosSemanas()
+
+Licitaciones = []
+
+Mientras hayan Keywords:
+    KeyWordActual = Keyword.pop()
+
+    Escribo en "Objeto de Publicacion" KeywordActual 
+    Escribo en "Fecha de apertura desde" DosSemanasAtras
+    Escribo en "Fecha de apertura hasta" Hoy 
+
+    Localizo boton y lo clickeo
+    p = 1
+
+    Mientras haya paginas:
+        Tabla = EncuentroTabla()
+        n = Len(Tabla)
+        i = 0
+        Loopeo por la tabla n veces: 
+            Localizo i-esimo Objeto
+            Localizo i-esimo Script 
+            Corro Script en la misma pestania en la que estoy 
+            Me guardo el link de la pagina a donde va  
+            Armo par <Objeto, Link de Numero de Publicacion> 
+            Me guardo el par en Licitaciones 
+            Vuelvo a la pagina original 
+            i++ 
+
+        Escribo en "Objeto de Publicacion" KeywordActual 
+        Escribo en "Fecha de apertura desde" DosSemanasAtras
+        Escribo en "Fecha de apertura hasta" Hoy 
+        
+        p++ 
+        
+
+    
+
