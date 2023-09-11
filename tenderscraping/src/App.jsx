@@ -38,46 +38,6 @@ function TenderTable({ tenders }) {
   );
 }
 
-function SourceFilter({ tenders }) {
-  const sources = [...new Set(tenders.map((tender) => tender.source))];
-
-  return (
-    <div>
-      {uniqueSources.map((source, index) => (
-        <div key={index}>
-          <label>
-            <input type="checkbox" />
-            {source}
-          </label>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function DateFilter({ tenders }) {
-  const startDate = "2023-01-01";
-  const endDate = "2023-12-31";
-
-  const filteredTenders = tenders.filter((tender) => {
-    const tenderDate = new Date(tender.dateofpublication);
-    return tenderDate >= new Date(startDate) && tenderDate <= new Date(endDate);
-  });
-
-  return (
-    <div>
-      <ul>
-        {filteredTenders.map((tender, index) => (
-          <li key={index}>
-            {tender.name} - {tender.dateofpublication} - {tender.url} -{" "}
-            {tender.source}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
 function SearchBar() {
   return (
     <form>
@@ -86,6 +46,15 @@ function SearchBar() {
         <input type="checkbox" />{" "}
       </label>
     </form>
+  );
+}
+
+function FiltrableTenderTable({ tenders }) {
+  return (
+    <div>
+      <SearchBar />
+      <TenderTable tenders={tenders} />
+    </div>
   );
 }
 
@@ -111,5 +80,5 @@ const TENDERS = [
 ];
 
 export default function App() {
-  return <DateFilter tenders={TENDERS} />;
+  return <FiltrableTenderTable tenders={TENDERS} />;
 }
