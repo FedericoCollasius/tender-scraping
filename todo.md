@@ -1,6 +1,6 @@
 # To-Do:
 
-1. Search Table: https://www.youtube.com/watch?v=E1cklb4aeXA
+1. Search Table: ver como funciona lo que codeaste.
 
 # Para publicarlo:
 
@@ -14,7 +14,6 @@
 - Formato de la fecha.
 - Tener las licitaciones en varias paginas.
 - Busqueda puede buscar varias cosas a la vez por coma: "suelo, agua"
-- dateofpublication => dateOfPublication
 
 # Keep in mind:
 
