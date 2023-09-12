@@ -1,13 +1,15 @@
+import { tenders } from "./assets/data.js";
+
 function TenderRow({ tender }) {
   const name = tender.name;
-  const dateofpublication = tender.dateofpublication;
+  const dateOfPublication = tender.dateOfPublication;
   const url = tender.url;
   const source = tender.source;
 
   return (
     <tr>
       <td>{name}</td>
-      <td>{dateofpublication}</td>
+      <td>{dateOfPublication}</td>
       <td>
         <a href={url}>{url}</a>
       </td>
@@ -58,27 +60,6 @@ function FiltrableTenderTable({ tenders }) {
   );
 }
 
-const TENDERS = [
-  {
-    name: "Renovación de Red Secundaria e Instalación de Cabeceras - VR Morón (MOR-DMA014A, MOR-DMA014B,MOR-DMA015, MOR-DMA016, MOR-DMA017A, MOR-DMA017B Y MOR-DMA020) OA70237",
-    dateofpublication: "2023-08-24",
-    url: "https://www.aysa.com.ar/proveedores/licitaciones/Licitaciones-Obras-Expansion/Detalle_de_Licitaciones_Obras?id=7139AF87-0D5C-4D59-9ED0-FAA104FE404F",
-    source: "AYSA",
-  },
-  {
-    name: "Red Secundaria Cloacal Dique Luján (NC70057)",
-    dateofpublication: "2023-08-07",
-    url: "https://www.aysa.com.ar/proveedores/licitaciones/Licitaciones-Obras-Expansion/Detalle_de_Licitaciones_Obras?id=716D9EDC-57D6-476E-9CDF-53A337B3D3A7",
-    source: "AYSA",
-  },
-  {
-    name: "Red Secundaria Cloacal Barrio Hudson Resto - Etapa 1 (SC70382)",
-    dateofpublication: "2023-08-03",
-    url: "https://www.aysa.com.ar/proveedores/licitaciones/Licitaciones-Obras-Expansion/Detalle_de_Licitaciones_Obras?id=A128FC2B-20BA-406B-B25B-3709397CF1F8",
-    source: "AYSA",
-  },
-];
-
 export default function App() {
-  return <FiltrableTenderTable tenders={TENDERS} />;
+  return <FiltrableTenderTable tenders={tenders} />;
 }
