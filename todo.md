@@ -4,11 +4,7 @@
 2. Rango de fechas para buscar.
 3. Publicarlo a Vercel o Github.
 
-# Para publicarlo:
-
-- Al menos un solo scraper que ande bien.
-
-# Se puden hacer ya publicado:
+# Future Features:
 
 - Que una vez por dia scrape los sitios y refreshe la base de datos y la tabla.
 - Search box ignore tildes.
@@ -20,7 +16,5 @@
 
 # Keep in mind:
 
-- AYSA: API
-- COMIREC: Scrap
 - COMPRAR: Selenium
 - ACUMAR: Selenium o BS4
