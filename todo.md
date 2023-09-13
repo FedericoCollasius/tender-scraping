@@ -1,6 +1,8 @@
 # To-Do:
 
-1. Search Table: ver como funciona lo que codeaste.
+1. Que ignore tildes, guiones, etc al buscar.
+2. Rango de fechas para buscar.
+3. Publicarlo a Vercel o Github.
 
 # Para publicarlo:
 
@@ -14,6 +16,7 @@
 - Formato de la fecha.
 - Tener las licitaciones en varias paginas.
 - Busqueda puede buscar varias cosas a la vez por coma: "suelo, agua"
+- Bolding text que busco.
 
 # Keep in mind:
 

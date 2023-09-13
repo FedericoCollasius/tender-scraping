@@ -2,7 +2,7 @@ import TenderTable from "./TenderTable";
 import SearchBar from "./SearchBar";
 import { useState } from "react";
 
-function FiltrableTenderTable({ tenders }) {
+export default function FiltrableTenderTable({ tenders }) {
   const [filterText, setFilterText] = useState("");
 
   return (
@@ -12,5 +12,3 @@ function FiltrableTenderTable({ tenders }) {
     </div>
   );
 }
-
-export default FiltrableTenderTable;

@@ -1,4 +1,4 @@
-function SearchBar({ filterText, onFilterTextChange }) {
+export default function SearchBar({ filterText, onFilterTextChange }) {
   return (
     <form>
       <input

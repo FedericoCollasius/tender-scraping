@@ -1,6 +1,6 @@
 import TenderRow from "./TenderRow";
 
-function TenderTable({ tenders, filterText }) {
+export default function TenderTable({ tenders, filterText }) {
   const rows = [];
 
   tenders.forEach((tender) => {
@@ -16,7 +16,6 @@ function TenderTable({ tenders, filterText }) {
         <tr>
           <th>Nombre</th>
           <th>Fecha de Publiacion</th>
-          <th>URL</th>
           <th>Pagina</th>
         </tr>
       </thead>
@@ -24,5 +23,3 @@ function TenderTable({ tenders, filterText }) {
     </table>
   );
 }
-
-export default TenderTable;

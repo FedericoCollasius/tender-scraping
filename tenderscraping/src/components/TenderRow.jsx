@@ -1,4 +1,4 @@
-function TenderRow({ tender }) {
+export default function TenderRow({ tender }) {
   const name = tender.name;
   const dateOfPublication = tender.dateOfPublication;
   const url = tender.url;
@@ -6,14 +6,11 @@ function TenderRow({ tender }) {
 
   return (
     <tr>
-      <td>{name}</td>
-      <td>{dateOfPublication}</td>
       <td>
-        <a href={url}>{url}</a>
+        <a href={url}>{name}</a>
       </td>
+      <td>{dateOfPublication}</td>
       <td>{source}</td>
     </tr>
   );
 }
-
-export default TenderRow;
