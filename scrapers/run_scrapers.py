@@ -14,8 +14,10 @@ class Scrape:
             self.scrape_aysa()
             self.scrape_comirec()
 
-            with open("tenders.json", "w", encoding="utf-8") as f:
-                json.dump(tenders, f, ensure_ascii=False, indent=4)
+            with open("../tenderscraping/src/assets/data.js", "w", encoding="utf-8") as f:
+                json_data = json.dumps(tenders, ensure_ascii=False, indent=4)
+                f.write(f"export const tenders = {json_data};\n")
+
 
             print("Data scraping completed!")
         except Exception as e:
@@ -48,7 +50,7 @@ class Scrape:
 
             tender = {
                 "name": name,
-                "dateofpublication": date_of_publication,
+                "dateOfPublication": date_of_publication,
                 "url": url,
                 "source": source,
             }
@@ -81,7 +83,7 @@ class Scrape:
                     clean_date_of_publication_str, "%Y-%m-%d"
                 ).date()
                 date_of_publication = date_of_publication.isoformat()
-                comirec_tenders[i]["dateofpublication"] = date_of_publication
+                comirec_tenders[i]["dateOfPublication"] = date_of_publication
 
             if info.text.startswith(
                 ("Llamado a licitación", "Documentación Licitatoria")
@@ -129,7 +131,8 @@ class Scrape:
             if month:
                 date_str = f"{year}-{month:02d}-{day:02d}"
                 return date_str
-        return None
+        return None 
+
 
 
 if __name__ == "__main__":
