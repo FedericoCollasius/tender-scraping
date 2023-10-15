@@ -1,4 +1,4 @@
-[
+export const tenders = [
   {
     name: "Renovación de Red Secundaria e Instalación de Cabeceras - VR Morón (MOR-DMA014A, MOR-DMA014B,MOR-DMA015, MOR-DMA016, MOR-DMA017A, MOR-DMA017B Y MOR-DMA020) OA70237",
     dateofpublication: "2023-08-24",
