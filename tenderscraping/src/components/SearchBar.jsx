@@ -1,12 +1,12 @@
 export default function SearchBar({ filterText, onFilterTextChange }) {
   return (
-    <form>
+    <div className="container">
       <input
         type="text"
+        placeholder="Buscar licitación..."
         value={filterText}
-        placeholder="Buscar..."
         onChange={(e) => onFilterTextChange(e.target.value)}
       />
-    </form>
+    </div>
   );
 }

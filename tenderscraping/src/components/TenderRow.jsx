@@ -1,16 +1,19 @@
 export default function TenderRow({ tender }) {
-  const name = tender.name;
-  const dateOfPublication = tender.dateOfPublication;
-  const url = tender.url;
-  const source = tender.source;
+  // Convierte la fecha de "Año-Mes-Dia" a "Día/Mes/Año"
+  const formatDate = (dateString) => {
+    const [year, month, day] = dateString.split("-");
+    return `${day}/${month}/${year}`;
+  };
 
   return (
     <tr>
       <td>
-        <a href={url}>{name}</a>
+        <a href={tender.url} target="_blank" rel="noopener noreferrer">
+          {tender.name}
+        </a>
       </td>
-      <td>{dateOfPublication}</td>
-      <td>{source}</td>
+      <td>{formatDate(tender.dateofpublication)}</td>
+      <td>{tender.source}</td>
     </tr>
   );
 }
