@@ -2,7 +2,8 @@
 
 - Que una vez por dia scrape los sitios y refreshe la base de datos y la tabla.
 
-# Keep in mind:
-
-- COMPRAR: Selenium
+# En orden de prioridad
 - ACUMAR: Selenium o BS4
+- BuenosAiresCompras: 
+- COMPRAR: Selenium
+
