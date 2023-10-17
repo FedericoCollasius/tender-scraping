@@ -4,6 +4,6 @@
 
 # En orden de prioridad
 - ACUMAR: Selenium o BS4
-- BuenosAiresCompras: 
 - COMPRAR: Selenium
+- BuenosAiresCompras: 
 
