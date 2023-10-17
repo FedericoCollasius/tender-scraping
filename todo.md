@@ -4,8 +4,8 @@
 
 # Scrapers que hacer (en orden de prioridad):
 
-- ACUMAR: Selenium o BS4
-- BuenosAiresCompras:
-- COMPRAR: Selenium
+- ACUMAR (https://www.acumar.gob.ar/transparencia/compras/): Selenium o BS4
+- BuenosAiresCompras (https://www.buenosairescompras.gob.ar/):
+- COMPRAR (https://comprar.gob.ar/BuscarAvanzado.aspx): Selenium 
  
 
