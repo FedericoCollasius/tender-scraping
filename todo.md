@@ -1,8 +1,8 @@
 # To-Do:
 
-- Que una vez por dia scrape los sitios y refreshe la base de datos y la tabla.
+- Que cargue las imagenes. 
 
-# En orden de prioridad
+# Scrapers que hacer (en orden de prioridad):
 - ACUMAR: Selenium o BS4
 - BuenosAiresCompras:
 - COMPRAR: Selenium
