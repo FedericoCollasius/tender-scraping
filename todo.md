@@ -1,6 +1,4 @@
-# To-Do:
-
-- Que cargue las imagenes. 
+# To-Do: 
 
 # Scrapers que hacer (en orden de prioridad):
 

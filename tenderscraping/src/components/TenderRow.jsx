@@ -1,5 +1,4 @@
 export default function TenderRow({ tender }) {
-  // Convierte la fecha de "Año-Mes-Dia" a "Día/Mes/Año"
   const formatDate = (dateString) => {
     const [year, month, day] = dateString.split("-");
     return `${day}/${month}/${year}`;
