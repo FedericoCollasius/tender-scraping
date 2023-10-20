@@ -1,3 +1,5 @@
+import GeodataLogo from "../assets/GeodataLogo.png"
+
 export default function Logo() {
   return (
     <a
@@ -5,7 +7,7 @@ export default function Logo() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src="/images/GeodataLogo.png" alt="Geodata Logo" className="logo" />
+      <img src= {GeodataLogo} alt="Geodata Logo" className="logo" />
     </a>
   );
 }
